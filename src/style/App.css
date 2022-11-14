@@ -16,7 +16,9 @@
 
 }
 
-.post ,select ,option {
+.post,
+select,
+option {
       display: flex;
       padding: 9px;
       border: 2px solid rgb(201, 23, 82);
@@ -25,8 +27,8 @@
       align-items: center;
       -webkit-text-stroke: 1px #fc78ff;
       -webkit-text-fill-color: transparent;
-      
-      
+
+
 
 }
 
@@ -41,14 +43,34 @@ h1 {
       text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
       -webkit-text-stroke: 2px #fc78ff;
       -webkit-text-fill-color: transparent;
-      
+
 }
-select, option {
-     
+
+select,
+option {
+
       background: #222327;
       height: 50px;
-      width:auto;
-   
+      width: auto;
+
       top: -8px;
       left: -75px;
+}
+
+.post-enter {
+      opacity: 0;
+}
+
+.post-enter-active {
+      opacity: 1;
+      transition: opacity 500ms ease-in;
+}
+
+.post-exit {
+      opacity: 1;
+}
+
+.post-exit-active {
+      opacity: 0;
+      transition: opacity 500ms ease-in;
 }
