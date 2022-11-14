@@ -1,34 +1,39 @@
 import React, { useState } from 'react'
+import Counter from './Components/Counter';
+import PostItm from './Components/PostItm';
+import PostList from './Components/PostList';
+import './style/App.css';
+import MyButton from './Components/UI/Button/MyButton.jsx';
+import MyInput from './Components/UI/Input/MyInput';
+import PostForm from './Components/PostForm';
+
+
 
 function App() {
 
 
-  const [likes, setlikes] = useState(0)
-  const [value, setValue] = useState('input txt(e)')
+  const [posts, setPosts] = useState([
+    { id: 1, title: 'JavaScript', body: "Descriptions" },
+    { id: 2, title: 'JavaScript 2', body: "Descriptions" },
+    { id: 3, title: 'JavaScript 3', body: "Descriptions" },
+  ])
 
-  function increment() {
-    setlikes(likes + 1);
-  }
-
-  function decrement() {
-    setlikes(likes - 1);
-  }
-
-
-
-
+ const createPost = (newPost) => {
+setPosts([...posts,newPost])
+ }
+ const removePost = (post) => {
+    setPosts(posts.filter(p => p.id !==post.id))
+ }
 
   return (
-    <div className="App">
-      <h1>{likes}</h1>
-      <h1>{value}</h1>
-      <input
-        type="text"
-        value={value}
-        onChange={event =>setValue(event.target.value)} 
-        />
-      <button onClick={increment}>increment</button>
-      <button onClick={decrement}>decrement</button>
+    <div className='App'>
+      <PostForm create={createPost}/>
+      {posts.length !=0
+      ?<PostList remove={removePost} posts={posts} title="Post list 1" /> 
+      :<h1 style={{textAlign: 'center'}}>Posts not found</h1>
+      }
+      
+      
     </div>
   );
 }

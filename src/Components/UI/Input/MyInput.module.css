@@ -1,0 +1,11 @@
+.myInput {
+      width: 97%;
+      background-color: #222327;
+      margin: 5px 10px 10px;
+      margin-right: 10px;
+      border: 2px solid rgb(201, 23, 82);
+      padding:10px;
+      border-radius:10px;
+      -webkit-text-stroke: 2px #fc78ff;
+      -webkit-text-fill-color: transparent;
+}
