@@ -2,34 +2,53 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      
+
 }
+
 #root {
       display: flex;
       justify-content: center;
 
 }
+
 .App {
       width: 800px;
 
 }
-.post {
+
+.post ,select ,option {
       display: flex;
       padding: 9px;
       border: 2px solid rgb(201, 23, 82);
       margin: 10px;
       justify-content: space-between;
       align-items: center;
+      -webkit-text-stroke: 1px #fc78ff;
+      -webkit-text-fill-color: transparent;
+      
+      
 
 }
+
 body {
       background-color: #222327;
       display: flex;
       align-items: center;
       margin: 0;
-   }
-   h1{
-    text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
-   -webkit-text-stroke: 2px #fc78ff;
-   -webkit-text-fill-color: transparent;
-   }
+}
+
+h1 {
+      text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+      -webkit-text-stroke: 2px #fc78ff;
+      -webkit-text-fill-color: transparent;
+      
+}
+select, option {
+     
+      background: #222327;
+      height: 50px;
+      width:auto;
+   
+      top: -8px;
+      left: -75px;
+}

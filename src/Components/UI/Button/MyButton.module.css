@@ -1,6 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
-    .myBtn {
+
+.myBtn {
       background-color: #222327;
       text-decoration: none;
       display: inline-block;
@@ -13,15 +13,16 @@
       font-family: 'Montserrat', sans-serif;
       transition: .2s ease-in-out;
       font-family: 'Rubik Mono One', sans-serif;
-   font-size: 20px;
-   text-align: center;
-   color: #fff;
-   text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
-   -webkit-text-stroke: 2px #fc78ff;
-   -webkit-text-fill-color: transparent;
-   letter-spacing: 5px;
-    }
-    .myBtn:before {
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      text-shadow: 10px 10px 30px #2400ff, -10px -10px 30px #7e2bd9;
+      -webkit-text-stroke: 2px #fc78ff;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 5px;
+}
+
+.myBtn:before {
       content: "";
       background: linear-gradient(90deg, rgba(255, 255, 255, .1), rgba(255, 255, 255, .5));
       height: 50px;
@@ -30,12 +31,14 @@
       top: -8px;
       left: -75px;
       transform: skewX(-45deg);
-    }
-    .myBtn:hover {
+}
+
+.myBtn:hover {
       background: #7e2bd9;
       color: #fff;
-    }
-    .myBtn:hover:before {
+}
+
+.myBtn:hover:before {
       left: 150px;
       transition: .5s ease-in-out;
-    }
+}
