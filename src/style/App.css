@@ -3,6 +3,8 @@
       padding: 0;
       box-sizing: border-box;
 
+      width: 100%;
+
 }
 
 #root {
@@ -12,7 +14,9 @@
 }
 
 .App {
-      width: 800px;
+      width: 100%;
+      margin: auto;
+      padding: auto;
 
 }
 
@@ -58,12 +62,12 @@ option {
 }
 
 .post-enter {
-      opacity: 0;
+      transform: translateX(350px);
 }
 
 .post-enter-active {
-      opacity: 1;
-      transition: opacity 500ms ease-in;
+      transform: translateX(0px);
+      transition: all 500ms ease-in;
 }
 
 .post-exit {
@@ -71,6 +75,6 @@ option {
 }
 
 .post-exit-active {
-      opacity: 0;
-      transition: opacity 500ms ease-in;
+      transform: translateX(-350px);
+      transition: all 500ms ease-in;
 }
